@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+	    <title>Flexbox</title>
+	    <link rel="stylesheet" href="ejercicio_de_estilo.css">
+	</head>
+	
+	<body>
+
+		<section class="container">
+			<div class="card">
+				<div class="card-image car-1"></div>
+				<h2>60 megas, TV + internet:</h2>
+				<p>Totalplay TV</p>
+				<p>$599 al mes</p>
+				<p>Alexa integrada</p>
+				<p>80 canales</p>
+				<p>Club Wifi Totalplay</p>
+				<p>Wifi Pro</p>
+			</div>
+
+			<div class="card">
+				<div class="card-image car-2"></div>
+				<h2>250 megas, TV + internet:</h2>
+				<p>Totalplay TV</p>
+				<p>$789 al mes</p>
+				<p>Alexa integrada</p>
+				<p>80 canales</p>
+				<p>Club Totalplay</p>
+				<p>Wifi Pro</p>
+				<p></p>
+			</div>
+
+			<div class="card">
+				<div class="card-image car-3"></div>
+				<h2>500 megas, TV + internet</h2>
+				<p>$1,599 al mes</p>
+				<p>Nuevo Totalplay TV</p>
+				<p>Alexa integrada</p>
+				<p>80 canales</p>
+				<p>Club Totalplay</p>
+				<p>Wifi Pro</p>
+			</div>
+			
+			<div  class="card">
+			     <div class="card-image car-4"></div>
+				 <h2>1000 megas, TV + internet</h2>
+				 <p>$909 al mes</p>
+				 <p>Nuevo Totalplay TV</p>
+				 <p>Alexa integrada</p>
+				 <p>80 canales</p>
+				 <p>Club Totalplay</p>
+				 <p>Wifi Pro</p>
+
+		</section>
+		<style>
+		*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: rgb(27, 27, 27);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	background: white;
+	width: 270px;
+	height: 500px;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.card-image{
+	background-color: aqua;
+	height: 170px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+	background-image: url('');
+}
+
+.car-2{
+	background-image: url('');
+}
+
+.car-3{
+	background-image: url('');
+}
+
+.card h2{
+	padding: 10px;
+}
+
+.card p{
+	padding: 10px;
+}
+
+.card a{
+	background-color: black;
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	text-decoration: none;
+}
+
+.card:hover{
+	background-color: rgb(62,62,62);
+	color: white;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
+</style>
+	</body>
+</html>

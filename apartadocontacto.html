@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrataciones</title>
+	
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #081b29;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            height: 80%; /* Altura fija */
+            padding: 20px;
+            border: 3px solid #00ffff;
+            box-shadow: 0 0 20px 10px #007bff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            width: 100%; /* Ancho del formulario al 100% del contenedor */
+        }
+
+        .contact-form label, .contact-form textarea, .contact-form button {
+            margin-bottom: 10px;
+            width: 100%; /* Ancho al 100% del contenedor */
+            color: #000; /* Cambio de color del texto a negro */
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            padding: 5px;
+            border: 1px solid #007bff;
+            color: #000; /* Cambio de color del texto a negro */
+        }
+
+        .contact-form button {
+            padding: 8px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contratanos</h1><br>
+		<p>¡Informacion de contrataciones!</p><br>
+        <div class="contact-info">
+            <p><strong>Nombre del creador:</strong>Totalplay</p><br>
+            <p><strong>Correo Electrónico:</strong> cisnerosgarciade@ag.cbtis225.edu.mx</p><br>
+        </div>
+        <h2>Ingresa los siguientes datos para contratar</h2>
+        <form action="guardar_datos.php" method="post" class="contact-form">
+            <div style="text-align: center;">
+                <label for="name" style="margin-bottom: 10px;"><font color="white">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email" style="margin-bottom: 10px;"><font color="white">Dirección:</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+                <label for="comment" style="margin-bottom: 10px;"><font color="white">Tipo_paquete:</label><br>
+                <textarea id="comment" name="comment" required></textarea><br><br>
+            </div>
+            <button type="submit">Contratar</button>
+        </form>
+    </div>
+</body>
+</html>
